@@ -275,8 +275,11 @@ function sandbox_tag_ur_it($glue) {
 	return trim(join( $glue, $tags ));
 }
 
+// FIXME: NOT COMPATIBLE WITH PHP74
 // Produces an avatar image with the hCard-compliant photo class
 function sandbox_commenter_link() {
+	echo '<span class="fn n">'.get_comment_author_link().'</span>';
+	/*
 	$commenter = get_comment_author_link();
 	if ( ereg( '<a[^>]* class=[^>]+>', $commenter ) ) {
 		$commenter = ereg_replace( '(<a[^>]* class=[\'"]?)', '\\1url ' , $commenter );
@@ -287,6 +290,7 @@ function sandbox_commenter_link() {
 	$avatar_size = apply_filters( 'avatar_size', '32' ); // Available filter: avatar_size
 	$avatar = str_replace( "class='avatar", "class='photo avatar", get_avatar( $avatar_email, $avatar_size ) );
 	echo $avatar . ' <span class="fn n">' . $commenter . '</span>';
+	*/
 }
 
 // Function to filter the default gallery shortcode
