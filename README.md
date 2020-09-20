@@ -5,3 +5,7 @@
 This repo is not only to storage this theme, but also, I'll try fix it in order to be compatible with the latest WordPress.
 
 Origin version you could find at <http://www.plaintxt.org/>
+
+## Screenshots
+
+![ss](screenshot.png)
